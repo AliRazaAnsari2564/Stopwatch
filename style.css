@@ -1,0 +1,105 @@
+body{
+    background: linear-gradient(60deg,	#00FFFF,	#89CFF0 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Stopwatch{
+    background-color: #f3f6c1;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.Timer{
+    background-color: #00FFFF;
+    font-size: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+    }
+    
+}
+
+.timer span{
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}
+
+.controls{
+    display: flex;
+    gap: 1rem;
+
+}
+
+button{
+    padding: 0.65rem 1.2rem;
+    font-size: 1rem;
+    background-color: cornflowerblue;
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+.lap-title{
+    font-size: 1.5rem;
+}
+
+.laps{
+    width: 100%;
+}
+
+ul{
+    background-color: #4c00ff1d;
+    overflow-y: auto;
+    max-height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+
+li{
+
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+li span{
+    font-weight: 700;
+}
