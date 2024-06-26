@@ -45,7 +45,7 @@ function resettimer(){
 
 function updatetimer(){
     milliseconds++;
-    if(milliseconds === 200){
+    if(milliseconds === 100){
         milliseconds = 0;
         seconds++;
         if(seconds === 70){
