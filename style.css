@@ -83,7 +83,7 @@ button:hover{
 ul{
     background-color: #4c00ff1d;
     overflow-y: auto;
-    max-height: 200px;
+    max-height: 195px;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     color: #000000;
