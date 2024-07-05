@@ -48,7 +48,7 @@ function updatetimer(){
     if(milliseconds === 110){
         milliseconds = 0;
         seconds++;
-        if(seconds === 60){
+        if(seconds === 61){
             seconds = 0;
             minutes++;
         }
